@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
-  const [count, setCount] = useState(0)
+return <div className=" ">
 
-  return (
-    <>
-    
-  <p className="text-red-950 bg-amber-200">HOLA MUNDO</p>
-     
-    </>
-  )
+<NavBar/>
+</div>
+ 
 }
 
-export default App
+export default App;
