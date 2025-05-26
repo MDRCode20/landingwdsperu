@@ -10,7 +10,7 @@ function App() {
     <>
     
   <p className="text-red-950 bg-amber-200">HOLA MUNDO</p>
-      
+     
     </>
   )
 }
