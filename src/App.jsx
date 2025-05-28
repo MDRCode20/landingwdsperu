@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { FaLaptopCode, FaShoppingCart, FaPenNib, FaCogs, FaBars, FaTimes,FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn  } from 'react-icons/fa'
 import { motion } from 'framer-motion'
@@ -27,9 +25,9 @@ const [menuOpen, setMenuOpen] = useState(false);
           <h1 className="text-2xl font-bold text-blue-700">WDSPERU</h1>
           <nav className="space-x-6 text-gray-700 font-medium hidden md:flex">
             <a href="#inicio" className="hover:text-blue-600">Inicio</a>
-               <a href="#nosotros" className="hover:text-blue-600">Nosotros</a>
             <a href="#servicios" className="hover:text-blue-600">Servicios</a>
             <a href="#portafolio" className="hover:text-blue-600">Portafolio</a>
+               <a href="#nosotros" className="hover:text-blue-600">Nosotros</a>
             <a href="#contacto" className="hover:text-blue-600">Contacto</a>
           </nav>
 
@@ -44,9 +42,9 @@ const [menuOpen, setMenuOpen] = useState(false);
         {menuOpen && (
           <div className="md:hidden bg-white px-6 py-4 space-y-3 text-center shadow">
             <a href="#inicio" onClick={() => setMenuOpen(false)} className="block text-blue-600">Inicio</a>
-            <a href="#nosotros" onClick={() => setMenuOpen(false)} className="block text-blue-600">Nosotros</a>
             <a href="#servicios" onClick={() => setMenuOpen(false)} className="block text-blue-600">Servicios</a>
             <a href="#portafolio" onClick={() => setMenuOpen(false)} className="block text-blue-600">Portafolio</a>
+            <a href="#nosotros" onClick={() => setMenuOpen(false)} className="block text-blue-600">Nosotros</a>
             <a href="#contacto" onClick={() => setMenuOpen(false)} className="block text-blue-600">Contacto</a>
           </div>
         )}
@@ -168,9 +166,9 @@ const [menuOpen, setMenuOpen] = useState(false);
       <h4 className="text-xl font-bold mb-4">Enlaces Rápidos</h4>
       <ul className="space-y-2">
         <li><a href="#inicio" className="hover:text-blue-300">Inicio</a></li>
-        <li><a href="#nosotros" className="hover:text-blue-300">Nosotros</a></li>
         <li><a href="#servicios" className="hover:text-blue-300">Servicios</a></li>
         <li><a href="#portafolio" className="hover:text-blue-300">Portafolio</a></li>
+        <li><a href="#nosotros" className="hover:text-blue-300">Nosotros</a></li>
       </ul>
     </div>
 
