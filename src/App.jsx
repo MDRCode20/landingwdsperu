@@ -3,7 +3,7 @@ import "./App.css";
 import { FaLaptopCode, FaShoppingCart, FaPenNib, FaCogs, FaBars, FaTimes,FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn  } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import SlideCards from './components/SlideCards';
-
+import AnimatedTitle from './components/AnimatedTitle';
 
 
 
@@ -56,7 +56,8 @@ const [menuOpen, setMenuOpen] = useState(false);
           initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.8 }}
           variants={fadeUp}
         >
-          <h2 className="text-5xl font-extrabold mb-6">Impulsa tu marca con diseño profesional</h2>
+          <AnimatedTitle />
+
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Creamos logos, páginas web, sistemas y tiendas virtuales adaptadas a tus necesidades.
           </p>
