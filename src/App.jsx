@@ -4,7 +4,7 @@ import { FaLaptopCode, FaShoppingCart, FaPenNib, FaCogs, FaBars, FaTimes,FaFaceb
 import { motion } from 'framer-motion'
 import SlideCards from './components/SlideCards';
 import AnimatedTitle from './components/AnimatedTitle';
-
+import ProyectoCard from "./components/ProyectoCard";
 
 
 const fadeUp = {
@@ -56,7 +56,7 @@ const [menuOpen, setMenuOpen] = useState(false);
           initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.8 }}
           variants={fadeUp}
         >
-          <AnimatedTitle />
+       <AnimatedTitle />
 
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Creamos logos, páginas web, sistemas y tiendas virtuales adaptadas a tus necesidades.
@@ -107,20 +107,12 @@ const [menuOpen, setMenuOpen] = useState(false);
             initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }}
             variants={fadeUp}
           >
+
             Algunos de Nuestros Trabajos
           </motion.h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((n) => (
-              <motion.div key={n}
-                className="bg-gray-100 rounded-lg overflow-hidden shadow hover:shadow-xl transition"
-                initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.5 + n * 0.1 }}
-                variants={fadeUp}
-              >
-                <div className="h-48 bg-gray-300 flex items-center justify-center text-gray-600">
-                  Proyecto {n}
-                </div>
-                <div className="p-4 text-center text-sm">Sitio Web | Logo | E-commerce</div>
-              </motion.div>
+           <ProyectoCard/>
             ))}
           </div>
         </div>

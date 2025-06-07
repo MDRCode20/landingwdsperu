@@ -7,12 +7,12 @@ html {
 .custom-animated-title {
   color: #220aff;
   margin: 0;
-  font-size: 3vw; /* o ajusta según prefieras */
+  font-size: 3vw; 
   display: flex;
   justify-content: center;
   padding: 4vw 4vw 2vw 4vw;
   font-family: "Bungee Shade", sans-serif;
-  flex-wrap: wrap; /* para que las letras no se desborden */
+  flex-wrap: wrap; 
 }
 
 .custom-animated-title span {
@@ -36,19 +36,19 @@ html {
 
 @keyframes color-change {
   0% {
-    color: #dbeafe; /* azul cielo pálido */
+    color: #dbeafe; 
   }
   25% {
-    color: #a5b4fc; /* azul lavanda elegante */
+    color: #a5b4fc; 
   }
   50% {
-    color: #60a5fa; /* azul moderado, legible */
+    color: #60a5fa; 
   }
   75% {
-    color: #93c5fd; /* azul hielo suave */
+    color: #93c5fd; 
   }
   100% {
-    color: #dbeafe; /* vuelve al claro */
+    color: #dbeafe; 
   }
 }
 
