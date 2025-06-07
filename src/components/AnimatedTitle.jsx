@@ -5,7 +5,7 @@ export default function AnimatedTitle() {
   return (
     <h2 className="text-2xl font-extrabold mb-6 custom-animated-title">
       {title.split("").map((char, i) => (
-        <span key={i} style={{ animationDelay: `${(i + 10) * 0.02}s` }}>
+        <span key={i} style={{ animationDelay: `${(i + 5) * 0.02}s` }}>
           {char === " " ? "\u00A0" : char}
         </span>
       ))}

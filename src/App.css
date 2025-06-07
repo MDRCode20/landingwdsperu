@@ -16,10 +16,13 @@ html {
 }
 
 .custom-animated-title span {
-  padding: 0.2vw;
+  padding: 0.1vw;
   display: inline-block;
   animation: bounce 1s ease infinite, color-change 7s ease infinite;
   transform-origin: center;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 3px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes bounce {
