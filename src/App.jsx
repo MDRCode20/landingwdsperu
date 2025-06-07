@@ -36,7 +36,7 @@ const [menuOpen, setMenuOpen] = useState(false);
           </button>
         </div>
 
-        {/* Mobile nav */}
+      
         {menuOpen && (
           <div className="md:hidden bg-white px-6 py-4 space-y-3 text-center shadow">
             <a href="#inicio" onClick={() => setMenuOpen(false)} className="block text-blue-600">Inicio</a>
@@ -110,11 +110,7 @@ const [menuOpen, setMenuOpen] = useState(false);
 
             Algunos de Nuestros Trabajos
           </motion.h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((n) => (
-           <ProyectoCard/>
-            ))}
-          </div>
+         
         </div>
       </section>
 

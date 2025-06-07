@@ -1,7 +1,11 @@
-
 import { motion } from "framer-motion";
 
 export default function ProyectoCard({ imagen, titulo, descripcion, delay }) {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <motion.div
       className="bg-gray-100 rounded-lg overflow-hidden shadow hover:shadow-xl transition"
