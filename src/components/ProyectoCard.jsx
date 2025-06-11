@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+
 export default function ProyectoCard({ imagen, titulo, descripcion, delay }) {
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
